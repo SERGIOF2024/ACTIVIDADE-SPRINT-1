@@ -18,3 +18,14 @@ if (userPin === expectedPin) {
   } else {
     // Gera uma dica com base na comparação dos PINs
     let hint = 'PIN incorreto. O próximo valor deve ser ' + (userPin < expectedPin ? 'maior' : 'menor');
+
+        // Adiciona 'Muito' se a diferença for maior que 500
+        if (Math.abs(userPin - expectedPin) > 500) {
+            hint += ' Muito';
+          }
+      
+          document.getElementById('result').textContent = hint;
+          console.log('PIN esperado:', expectedPin);
+        }
+      }
+      
