@@ -3,4 +3,8 @@ function generateRandomPin() {
   }
   
   const expectedPin = generateRandomPin();
+  function checkPin() {
+    // Obtém o PIN inserido pelo usuário
+    const userPin = parseInt(document.getElementById('pinInput').value);
+  
   
