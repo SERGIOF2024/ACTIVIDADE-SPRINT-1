@@ -12,3 +12,9 @@ function generateRandomPin() {
     alert('Por favor, insira um PIN válido de no mínimo 4 dígitos.');
     return;
   }
+// Compara o PIN inserido com o PIN esperado
+if (userPin === expectedPin) {
+    document.getElementById('result').textContent = 'Parabéns! PIN correto!';
+  } else {
+    // Gera uma dica com base na comparação dos PINs
+    let hint = 'PIN incorreto. O próximo valor deve ser ' + (userPin < expectedPin ? 'maior' : 'menor');
