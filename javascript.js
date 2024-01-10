@@ -1,4 +1,4 @@
-
+/ Gera um PIN aleatório entre 1000 e 9999
 function gerarRandomPin() {
   return Math.floor(Math.random() * 9000) + 1000;
 }
